@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://leobatto.com/sitemap.xml
