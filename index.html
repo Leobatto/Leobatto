@@ -3,17 +3,24 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Soporte informático en Mar del Plata | Leobatto.com</title>
-  <meta name="description" content="Soporte informático, redes, Wi‑Fi, Microsoft 365, Google Workspace, hosting y automatización para empresas y profesionales en Mar del Plata.">
+  <title>Soporte informático en Mar del Plata | Leobatto</title>
+  <meta name="description" content="Soporte informático en Mar del Plata para empresas, profesionales y hogares. Redes, Wi‑Fi, hosting, dominios, automatización y asistencia técnica.">
   <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1">
   <meta name="theme-color" content="#07111f">
   <link rel="canonical" href="https://leobatto.com/">
+  <link rel="alternate" hreflang="es-AR" href="https://leobatto.com/">
+  <link rel="alternate" hreflang="x-default" href="https://leobatto.com/">
+  <meta name="geo.region" content="AR-B">
+  <meta name="geo.placename" content="Mar del Plata">
   <meta property="og:locale" content="es_AR">
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="Leobatto.com">
-  <meta property="og:title" content="Soporte informático en Mar del Plata | Leobatto.com">
-  <meta property="og:description" content="Soluciones IT claras, estables y acompañadas: soporte, redes, nube, seguridad y automatización.">
+  <meta property="og:title" content="Soporte informático en Mar del Plata | Leobatto">
+  <meta property="og:description" content="Soporte técnico, redes, Wi‑Fi, hosting y automatización para empresas, profesionales y hogares en Mar del Plata.">
   <meta property="og:url" content="https://leobatto.com/">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Soporte informático en Mar del Plata | Leobatto">
+  <meta name="twitter:description" content="Soporte técnico, redes, Wi‑Fi, hosting y automatización en Mar del Plata.">
   <link rel="icon" type="image/jpeg" href="/assets/logo-leobatto.jpg">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -21,34 +28,137 @@
   <link rel="stylesheet" href="assets/styles.css">
   <script type="application/ld+json">
   {
-    "@context":"https://schema.org",
-    "@graph":[
+    "@context": "https://schema.org",
+    "@graph": [
       {
-        "@type":"Organization",
-        "@id":"https://leobatto.com/#organization",
-        "name":"Leobatto.com Soluciones Informáticas",
-        "url":"https://leobatto.com/",
-        "logo":{"@type":"ImageObject","url":"https://leobatto.com/assets/logo-leobatto.jpg","width":516,"height":421},
-        "email":"leo@leobatto.com",
-        "telephone":"+54 9 223 449-3274",
-        "areaServed":{"@type":"City","name":"Mar del Plata"},
-        "contactPoint":{"@type":"ContactPoint","telephone":"+54 9 223 449-3274","email":"leo@leobatto.com","contactType":"soporte y ventas","availableLanguage":"Spanish"}
+        "@type": [
+          "LocalBusiness",
+          "ProfessionalService"
+        ],
+        "@id": "https://leobatto.com/#localbusiness",
+        "name": "Leobatto Soluciones Informáticas",
+        "alternateName": "Leobatto.com",
+        "description": "Soporte informático, redes, Wi-Fi, hosting, dominios y automatización para empresas, profesionales y hogares en Mar del Plata.",
+        "url": "https://leobatto.com/",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://leobatto.com/assets/logo-leobatto.jpg",
+          "width": 516,
+          "height": 421
+        },
+        "image": "https://leobatto.com/assets/logo-leobatto.jpg",
+        "email": "info@leobatto.com",
+        "telephone": "+54 9 223 449-3274",
+        "areaServed": {
+          "@type": "City",
+          "name": "Mar del Plata",
+          "containedInPlace": {
+            "@type": "AdministrativeArea",
+            "name": "Buenos Aires, Argentina"
+          }
+        },
+        "sameAs": [
+          "https://www.google.com/maps/place/Leobatto+Soluciones+Inform%C3%A1ticas/data=!4m2!3m1!1s0x0:0x1ebd419a12dba262"
+        ],
+        "hasMap": "https://www.google.com/maps/place/Leobatto+Soluciones+Inform%C3%A1ticas/data=!4m2!3m1!1s0x0:0x1ebd419a12dba262",
+        "contactPoint": {
+          "@type": "ContactPoint",
+          "telephone": "+54 9 223 449-3274",
+          "email": "info@leobatto.com",
+          "contactType": "soporte y ventas",
+          "areaServed": "AR",
+          "availableLanguage": "Spanish"
+        },
+        "knowsAbout": [
+          "Soporte informático",
+          "Reparación de computadoras",
+          "Redes Wi-Fi",
+          "UniFi",
+          "MikroTik",
+          "Hosting y dominios",
+          "Automatización IT"
+        ]
       },
       {
-        "@type":"WebSite",
-        "@id":"https://leobatto.com/#website",
-        "url":"https://leobatto.com/",
-        "name":"Leobatto.com",
-        "inLanguage":"es-AR",
-        "publisher":{"@id":"https://leobatto.com/#organization"}
+        "@type": "WebSite",
+        "@id": "https://leobatto.com/#website",
+        "url": "https://leobatto.com/",
+        "name": "Leobatto.com",
+        "inLanguage": "es-AR",
+        "publisher": {
+          "@id": "https://leobatto.com/#localbusiness"
+        }
       },
       {
-        "@type":"Service",
-        "@id":"https://leobatto.com/#it-service",
-        "name":"Soporte informático y soluciones IT en Mar del Plata",
-        "serviceType":["Soporte técnico","Redes y Wi-Fi","Microsoft 365","Google Workspace","Hosting y dominios","Automatización IT"],
-        "provider":{"@id":"https://leobatto.com/#organization"},
-        "areaServed":{"@type":"City","name":"Mar del Plata"}
+        "@type": "WebPage",
+        "@id": "https://leobatto.com/#webpage",
+        "url": "https://leobatto.com/",
+        "name": "Soporte informático en Mar del Plata | Leobatto",
+        "description": "Soporte técnico, redes, Wi-Fi, hosting, dominios y automatización en Mar del Plata.",
+        "inLanguage": "es-AR",
+        "isPartOf": {
+          "@id": "https://leobatto.com/#website"
+        },
+        "about": {
+          "@id": "https://leobatto.com/#localbusiness"
+        },
+        "primaryImageOfPage": {
+          "@type": "ImageObject",
+          "url": "https://leobatto.com/assets/logo-leobatto.jpg"
+        }
+      },
+      {
+        "@type": "Service",
+        "@id": "https://leobatto.com/#it-service",
+        "name": "Soporte informático y soluciones IT en Mar del Plata",
+        "provider": {
+          "@id": "https://leobatto.com/#localbusiness"
+        },
+        "areaServed": {
+          "@type": "City",
+          "name": "Mar del Plata"
+        },
+        "serviceType": [
+          "Soporte técnico",
+          "Redes y Wi-Fi",
+          "Hosting y dominios",
+          "Automatización IT",
+          "Asesoramiento tecnológico"
+        ],
+        "hasOfferCatalog": {
+          "@type": "OfferCatalog",
+          "name": "Servicios informáticos",
+          "itemListElement": [
+            {
+              "@type": "Offer",
+              "itemOffered": {
+                "@type": "Service",
+                "name": "Soporte técnico y reparación de equipos"
+              }
+            },
+            {
+              "@type": "Offer",
+              "itemOffered": {
+                "@type": "Service",
+                "name": "Redes, Wi-Fi y conectividad"
+              }
+            },
+            {
+              "@type": "Offer",
+              "itemOffered": {
+                "@type": "Service",
+                "name": "Hosting, dominios y correo corporativo"
+              }
+            },
+            {
+              "@type": "Offer",
+              "itemOffered": {
+                "@type": "Service",
+                "name": "Automatización IT y asesoramiento"
+              }
+            }
+          ]
+        }
       }
     ]
   }
@@ -75,22 +185,14 @@
       <div class="container hero-layout">
         <div class="hero-copy">
           <p class="eyebrow"><span></span> Soluciones informáticas · Mar del Plata</p>
-          <h1>Tecnología que funciona.<br><em>Soporte que responde.</em></h1>
-          <p>Ayudamos a empresas, profesionales y hogares a trabajar mejor con soporte técnico, redes estables, servicios cloud y automatizaciones pensadas para el uso diario.</p>
+          <h1>Soporte informático que funciona.<br><em>Tecnología que responde.</em></h1>
+          <p>Ayudamos a empresas, profesionales y hogares de Mar del Plata con soporte técnico, redes estables, hosting y automatizaciones pensadas para el uso diario.</p>
           <div class="hero-actions">
             <a class="button primary" href="https://wa.me/5492234493274?text=Hola%20Leo%2C%20necesito%20asesoramiento%20inform%C3%A1tico." target="_blank" rel="noopener noreferrer">Hablar por WhatsApp <span>↗</span></a>
             <a class="button secondary" href="#servicios">Ver soluciones</a>
           </div>
           <div class="hero-trust"><span>Atención personal</span><span>Soporte remoto y presencial</span><span>Soluciones documentadas</span></div>
         </div>
-        <aside class="status-panel" aria-label="Áreas de servicio">
-          <p class="panel-label">LEOBATTO / SISTEMAS ACTIVOS</p>
-          <div class="status-row"><span class="status-dot"></span><div><strong>Soporte IT</strong><small>Equipos, usuarios y empresas</small></div><b>01</b></div>
-          <div class="status-row"><span class="status-dot"></span><div><strong>Redes</strong><small>Wi‑Fi, UniFi y conectividad</small></div><b>02</b></div>
-          <div class="status-row"><span class="status-dot"></span><div><strong>Cloud</strong><small>Microsoft 365 y Google Workspace</small></div><b>03</b></div>
-          <div class="status-row"><span class="status-dot"></span><div><strong>Automatización</strong><small>Procesos y espacios inteligentes</small></div><b>04</b></div>
-          <p class="panel-footer"><span></span> Operación en Mar del Plata</p>
-        </aside>
       </div>
     </section>
 
@@ -144,13 +246,14 @@
         <div><p class="eyebrow">HABLEMOS</p><h2>Contame qué necesitás resolver.</h2><p>Podés escribir por WhatsApp o email. Si todavía no sabés cuál es la solución, empezamos por entender el problema.</p></div>
         <div class="contact-actions">
           <a class="contact-link" href="https://wa.me/5492234493274?text=Hola%20Leo%2C%20necesito%20asesoramiento%20inform%C3%A1tico." target="_blank" rel="noopener noreferrer"><small>WHATSAPP</small><strong>+54 9 223 449-3274</strong><span>↗</span></a>
-          <a class="contact-link" href="mailto:leo@leobatto.com"><small>EMAIL</small><strong>leo@leobatto.com</strong><span>↗</span></a>
+          <a class="contact-link" href="mailto:info@leobatto.com"><small>EMAIL</small><strong>info@leobatto.com</strong><span>↗</span></a>
+          <a class="contact-link" href="https://www.google.com/maps/place/Leobatto+Soluciones+Inform%C3%A1ticas/data=!4m2!3m1!1s0x0:0x1ebd419a12dba262" target="_blank" rel="noopener noreferrer"><small>GOOGLE MAPS</small><strong>Ver perfil y opiniones</strong><span>↗</span></a>
         </div>
       </div>
     </section>
   </main>
 
-  <footer><div class="container footer-grid"><a class="brand" href="#inicio"><img src="assets/logo-leobatto.jpg" width="516" height="421" alt="Leobatto"></a><p>Soluciones informáticas claras, estables y acompañadas.</p><div><a href="https://domotica.leobatto.com/">Domótica</a><a href="https://taller.leobatto.com/">Taller</a></div><p>Mar del Plata, Argentina<br>© <span id="year"></span> Leobatto.com</p></div></footer>
+  <footer><div class="container footer-grid"><a class="brand" href="#inicio"><img src="assets/logo-leobatto.jpg" width="516" height="421" alt="Leobatto"></a><p>Soluciones informáticas claras, estables y acompañadas.</p><div><a href="https://domotica.leobatto.com/">Domótica</a><a href="https://taller.leobatto.com/">Taller</a><a href="https://www.google.com/maps/place/Leobatto+Soluciones+Inform%C3%A1ticas/data=!4m2!3m1!1s0x0:0x1ebd419a12dba262" target="_blank" rel="noopener noreferrer">Google Maps</a></div><p>Mar del Plata, Argentina<br>© <span id="year"></span> Leobatto.com</p></div></footer>
   <script src="assets/app.js" defer></script>
 </body>
 </html>
