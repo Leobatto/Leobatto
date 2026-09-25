@@ -56,6 +56,28 @@ function loadAnalytics() {
   analyticsLoaded = true;
 }
 
+function trackAnalyticsEvent(eventName, parameters) {
+  if (!analyticsLoaded || typeof window.gtag !== 'function') return;
+  window.gtag('event', eventName, parameters);
+}
+
+document.addEventListener('click', (event) => {
+  const link = event.target.closest('[data-analytics-event]');
+  if (!link) return;
+
+  const parameters = {
+    link_url: link.href,
+    link_location: link.dataset.analyticsLocation || 'sitio'
+  };
+
+  if (link.dataset.analyticsMethod) parameters.method = link.dataset.analyticsMethod;
+  if (link.dataset.analyticsName) parameters.cta_name = link.dataset.analyticsName;
+  if (link.dataset.analyticsContentType) parameters.content_type = link.dataset.analyticsContentType;
+  if (link.dataset.analyticsItemId) parameters.item_id = link.dataset.analyticsItemId;
+
+  trackAnalyticsEvent(link.dataset.analyticsEvent, parameters);
+});
+
 function removeAnalyticsCookies() {
   const cookieNames = ['_ga', `_ga_${analyticsId.replace('G-', '')}`];
   const domains = ['', '; domain=.leobatto.com', '; domain=leobatto.com'];
